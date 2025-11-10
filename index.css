@@ -162,6 +162,10 @@ body {
     color: white;
     text-decoration: none;
 }
+
+.customer-support:hover {
+    color: rgb(0, 0, 0);
+}
 /* ===== NAVIGATION BAR ===== */
 .nav-bar {
     background: var(--nav-bg);
