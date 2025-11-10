@@ -62,7 +62,7 @@ dropdowns.forEach(dropdown => {
   const toggle = dropdown.querySelector('.dropdown-toggle');
 
   toggle.addEventListener('click', (e) => {
-    if (window.innerWidth <= 1441) {
+    if (window.innerWidth <= 1050) {
       e.preventDefault();
 
       // Close other dropdowns
@@ -97,7 +97,7 @@ document.addEventListener('click', (e) => {
 
 // ✅ Handle window resize
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 1441) {
+  if (window.innerWidth > 1050) {
     navLinks.classList.remove('show');
     hamburger.classList.remove('active');
     dropdowns.forEach(d => d.classList.remove('active'));
