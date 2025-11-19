@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="BR Publications - Your source for the latest research and publications in the field of science and technology.">
+    <meta name="keywords" content="html, css, javascript">
+
+    <title>BR Publications - Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../images/BR_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="productdetails-components.css">
+</head>
+<body>
+    <main class="content">
+        <section id="resNovaPage" class="resNova-page">
+            <section class="resNova-hero">
+                <h1>Our Products</h1>
+            </section>
+
+            <div class="resNova-wrapper">
+                <!-- Sidebar -->
+                <aside class="resNova-sidebar">
+                    <div class="sidebar-card">
+                        <h3>🧭 Navigate in this page</h3>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#tab1"  class="tab-btn" data-tab="tab1"><i class="fas fa-angle-right"></i>Synopsis</a></li>
+                            <li><a href="#tab2" class="tab-btn" data-tab="tab2"><i class="fas fa-angle-right"></i>Scope</a></li>
+                            <li><a href="#tab3" class="tab-btn" data-tab="tab3"><i class="fas fa-angle-right"></i>Table of Contents</a></li>
+                            <li><a href="#tab4" class="tab-btn" data-tab="tab4"><i class="fas fa-angle-right"></i>Author Biography</a></li>
+                            <li><a href="#tab5" class="tab-btn" data-tab="tab5"><i class="fas fa-angle-right"></i>Archiving</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>📞 Contact Info</h3>
+                        <div class="underline"></div>
+                        <p>
+                            <strong>Email:</strong><br>
+                            info@brpublications.com<br><br>
+                            <strong>Phone:</strong><br>
+                            +91-98427 68170
+                        </p>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="resNova-container">
+                    <section class="resNova-section">
+                        <!-- PRODUCT DETAILS -->
+                        <div class="product-container">
+                            <!-- BOOK IMAGE -->
+                            <div class="book-cover">
+                                <img src="/Final Components/assets/book2.png" alt="Book Cover">
+                            </div>
+
+                            <!-- RIGHT SIDE DETAILS -->
+                            <div class="book-details">
+                                <h1>Digital Transformation in Modern Education</h1>
+                                <div class="author-list"><a onclick="loadPage('authordetails-components')">Dr. Jane Doe</a>, Dr. Peter Smith, Dr. Rose Michael</div>
+
+                                <div class="meta-info">
+                                    <p><strong>Indexed In:</strong> Google Scholar, Scopus</p>
+                                    <p><strong>Release Date:</strong> 12/09/2024</p>
+                                    <p><strong>Copyright:</strong> © 2024</p>
+                                    <p><strong>Pages:</strong> 240</p>
+                                    <p><strong>DOI:</strong> 10.1234/abcd1234</p>
+                                    <p><strong>ISBN:</strong> 978-1-2345-6789-0</p>
+                                </div>
+                            </div>
+                            <!-- Contact Cards -->
+                                <div class="contact-options">
+                                    <div class="contact-card">
+                                        <i class="fas fa-phone"></i>
+                                        <p>Call Us</p>
+                                        <small>+91 9876543210</small>
+                                    </div>
+
+                                    <div class="contact-card">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <p>WhatsApp</p>
+                                        <small>+91 9876543210</small>
+                                    </div>
+
+                                    <div class="contact-card">
+                                        <i class="fas fa-envelope"></i>
+                                        <p>Email Us</p>
+                                        <small>support@example.com</small>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- TABS SECTION -->
+                        <div class="tabs-container">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="tab1"><span>Synopsis</span></button>
+                                <button class="tab-btn" data-tab="tab2"><span>Scope</span></button>
+                                <button class="tab-btn" data-tab="tab3"><span>Table of Contents</span></button>
+                                <button class="tab-btn" data-tab="tab4"><span>Editor/Author Biographies</span></button>
+                                <button class="tab-btn" data-tab="tab5"><span>Archives</span></button>
+                            </div>
+
+                            <!-- CONTENT -->
+                            <div id="tab1" class="tab-content active">
+                                <h3>Synopsis</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lorem sit amet nulla
+                                    luctus tincidunt. This comprehensive guide explores the transformative power of digital technologies in modern educational settings. Through practical examples and case studies, readers will discover innovative approaches to teaching and learning in the digital age.</p>
+                                <p>The book delves into emerging trends, best practices, and evidence-based strategies that educators can implement to enhance student engagement and learning outcomes.</p>
+                            </div>
+
+                            <div id="tab2" class="tab-content">
+                                <h3>Scope</h3>
+                                <p>This book covers advanced digital transformation concepts including artificial intelligence in education, learning management systems, virtual classrooms, and data-driven decision making. It provides comprehensive insights into:</p>
+                                <ul>
+                                    <li>Digital pedagogical frameworks and methodologies</li>
+                                    <li>Technology integration strategies</li>
+                                    <li>Assessment and evaluation in digital environments</li>
+                                    <li>Future trends in educational technology</li>
+                                </ul>
+                            </div>
+
+                            <div id="tab3" class="tab-content">
+                                <h3>Table of Contents</h3>
+                                <ul>
+                                    <li>Chapter 1 – Introduction to Digital Transformation</li>
+                                    <li>Chapter 2 – Digital Learning Trends and Innovations</li>
+                                    <li>Chapter 3 – AI in Classrooms: Applications and Impact</li>
+                                    <li>Chapter 4 – Learning Management Systems</li>
+                                    <li>Chapter 5 – Virtual and Augmented Reality in Education</li>
+                                    <li>Chapter 6 – Data Analytics for Educational Excellence</li>
+                                    <li>Chapter 7 – Student Engagement in Digital Environments</li>
+                                    <li>Chapter 8 – Future of Education Technology</li>
+                                </ul>
+                            </div>
+
+                            <div id="tab4" class="tab-content">
+                                <h3>Editor & Author Biographies</h3>
+                                <p><strong>Dr. Jane Doe</strong> is a renowned educational technologist with over 15 years of experience in digital learning. She holds a Ph.D. in Educational Technology from Stanford University and has authored numerous research papers on AI in education.</p>
+                                <p><strong>Dr. Peter Smith</strong> serves as the Director of Digital Innovation at a leading university. His research focuses on learning analytics and student success strategies in online environments.</p>
+                                <p><strong>Dr. Rose Michael</strong> specializes in instructional design and has implemented digital transformation initiatives across multiple educational institutions worldwide.</p>
+                            </div>
+
+                            <div id="tab5" class="tab-content">
+                                <h3>Archives</h3>
+                                <p>This section contains related publications, previous editions, and supplementary materials that complement the main content of this book.</p>
+                                <ul>
+                                    <li>First Edition (2020) - Introduction to Educational Technology</li>
+                                    <li>Related Publication - Digital Pedagogy Handbook</li>
+                                    <li>Supplementary Materials - Case Study Collection</li>
+                                    <li>Research Papers - Latest findings in EdTech</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="productdetails-components.js"></script>
+</body>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="BR Publications - Your source for the latest research and publications in the field of science and technology.">
+    <meta name="keywords" content="html, css, javascript">
+    <title>BR Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css">
+    <link rel="stylesheet" href="contactus-components.css">
+    <link rel="icon" href="../images/BR_logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section id="contactPage">
+            <section class="contact-hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Connect with us</h1>
+                        <p>We would love to hear from you. Here's how you can reach us.</p>
+                    </div>
+                    <div class="hero-illustration">
+                        <svg class="illustration-img" width="400" height="300" viewBox="0 0 400 300" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Person -->
+                            <ellipse cx="200" cy="280" rx="80" ry="15" fill="rgba(0,0,0,0.1)" />
+                            <circle cx="200" cy="120" r="35" fill="#FFF" />
+                            <path d="M200 155 L200 220" stroke="#FFF" stroke-width="8" stroke-linecap="round" />
+                            <path d="M200 175 L160 200" stroke="#FFF" stroke-width="8" stroke-linecap="round" />
+                            <path d="M200 175 L240 200" stroke="#FFF" stroke-width="8" stroke-linecap="round" />
+                            <path d="M200 220 L170 270" stroke="#FFF" stroke-width="8" stroke-linecap="round" />
+                            <path d="M200 220 L230 270" stroke="#FFF" stroke-width="8" stroke-linecap="round" />
+
+                            <!-- Coffee cup -->
+                            <rect x="280" y="190" width="50" height="60" rx="5" fill="#FF8C00" />
+                            <ellipse cx="305" cy="190" rx="25" ry="8" fill="#FFA500" />
+                            <path d="M330 210 Q345 210 345 220 Q345 230 330 230" stroke="#FF8C00" stroke-width="4"
+                                fill="none" />
+                            <path d="M290 200 Q295 205 300 200" stroke="#FFF" stroke-width="2" fill="none"
+                                opacity="0.5" />
+
+                            <!-- Message box -->
+                            <rect x="80" y="40" width="120" height="80" rx="10" fill="#FFF" stroke="#FF8C00"
+                                stroke-width="3" />
+                            <line x1="95" y1="60" x2="185" y2="60" stroke="#FF8C00" stroke-width="3"
+                                stroke-linecap="round" />
+                            <line x1="95" y1="80" x2="170" y2="80" stroke="#1e3c72" stroke-width="3"
+                                stroke-linecap="round" />
+                            <line x1="95" y1="100" x2="150" y2="100" stroke="#1e3c72" stroke-width="3"
+                                stroke-linecap="round" />
+
+                            <!-- Notification badge -->
+                            <circle cx="330" cy="70" r="25" fill="#FF8C00" />
+                            <text x="330" y="78" text-anchor="middle" fill="#FFF" font-size="24"
+                                font-weight="bold">1</text>
+
+                            <!-- Decorative elements -->
+                            <circle cx="50" cy="150" r="8" fill="#FFA500" opacity="0.5" />
+                            <circle cx="350" cy="250" r="10" fill="#FFA500" opacity="0.5" />
+                            <path d="M70 200 L80 210 L90 200" stroke="#FFA500" stroke-width="3" fill="none"
+                                opacity="0.5" />
+
+                            <!-- Plant -->
+                            <rect x="320" y="230" width="40" height="50" rx="5" fill="#FF8C00" />
+                            <path d="M340 230 Q330 210 335 190" stroke="#4ade80" stroke-width="4" fill="none"
+                                stroke-linecap="round" />
+                            <path d="M340 230 Q350 210 345 190" stroke="#4ade80" stroke-width="4" fill="none"
+                                stroke-linecap="round" />
+                            <circle cx="335" cy="185" r="8" fill="#4ade80" />
+                            <circle cx="345" cy="185" r="8" fill="#4ade80" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-form-section">
+                        <div class="success-message" id="successMessage">
+                            <span style="font-size: 1.5rem;">✓</span>
+                            <span>Thank you! Your message has been sent successfully.</span>
+                        </div>
+
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-subtitle">Fill out the form below and we'll get back to you promptly.</p>
+
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="you@example.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="+91 9876543210" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" placeholder="Write your message..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Call Us</h3>
+                            <p>Mon – Sat, 9:30 AM – 5:30 PM IST</p>
+                            <a href="tel:+919842768170" class="info-link">+91 9842768170</a>
+                            <a href="tel:+919790091708" class="info-link">+91 9790091708</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email Us</h3>
+                            <p>Send us a message anytime.</p>
+                            <a href="mailto:info@brpublications.com" class="info-link">info@brpublications.com</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Visit Our Office</h3>
+                            <p>6/328-2, Maruthi Nagar,<br>Trichy Road, Namkkal-637001<br>Tamilnadu, India</p>
+                            <a href="https://maps.google.com" target="_blank" class="get-directions-btn">Get
+                                Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="contactus-components.js"></script>
+</body>
+</html>

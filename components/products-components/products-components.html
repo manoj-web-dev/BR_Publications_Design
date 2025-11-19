@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="BR Publications - Your source for the latest research and publications in the field of science and technology.">
+    <meta name="keywords" content="html, css, javascript">
+
+    <title>BR Publications - Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/Final Components/assets/BR_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="products-components.css">
+</head>
+
+<body>
+    <main class="content">
+        <section id="resNovaPage" class="resNova-page">
+            <section class="resNova-hero">
+                <h1>Our Products</h1>
+            </section>
+
+            <div class="resNova-wrapper">
+                <!-- Sidebar -->
+                <aside class="resNova-sidebar">
+                    <div class="sidebar-card">
+                        <h3>📚 Categories</h3>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Engineering Science</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Medical Science</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Management</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="sidebar-card">
+                        <h3>🧭 Navigate in this page</h3>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Synopsis & Scope</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Table of Contents</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Editor/Author Biographies</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Archiving</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="sidebar-card contact-card">
+                        <h3>📞 Contact Info</h3>
+                        <div class="underline"></div>
+                        <p>
+                            <strong>Email:</strong><br>
+                            info@brpublications.com<br><br>
+                            <strong>Phone:</strong><br>
+                            +91-98427 68170
+                        </p>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="resNova-container">
+                    <section class="resNova-section">
+                        <section class="trending-books" id="home-books">
+                            <div id="books-grid" class="books-grid">
+                                <!-- Book Cards -->
+                                <div class="book-card" onclick="loadPage('productdetails-components')">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book1.png" alt="Book 1">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Advanced AI Techniques</h3>
+                                        <p>by Dr. John Doe</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book2.png" alt="Book 2">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Engineering Research 2025</h3>
+                                        <p>by Prof. Jane Smith</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book3.png" alt="Book 3">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Modern Medicine & Health</h3>
+                                        <p>by Dr. Alan Green</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book4.png" alt="Book 4">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Business Management Today</h3>
+                                        <p>by Sarah Lee</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book5.jpg" alt="Book 5">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Future of Computing</h3>
+                                        <p>by Dr. Amy Chen</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book1.png" alt="Book 6">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Advanced AI Techniques</h3>
+                                        <p>by Dr. John Doe</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book2.png" alt="Book 7">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Engineering Research 2025</h3>
+                                        <p>by Prof. Jane Smith</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book3.png" alt="Book 8">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Modern Medicine & Health</h3>
+                                        <p>by Dr. Alan Green</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book4.png" alt="Book 9">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Business Management Today</h3>
+                                        <p>by Sarah Lee</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book5.jpg" alt="Book 10">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Future of Computing</h3>
+                                        <p>by Dr. Amy Chen</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book1.png" alt="Book 11">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Advanced AI Techniques</h3>
+                                        <p>by Dr. John Doe</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book2.png" alt="Book 12">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Engineering Research 2025</h3>
+                                        <p>by Prof. Jane Smith</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book3.png" alt="Book 13">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Modern Medicine & Health</h3>
+                                        <p>by Dr. Alan Green</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book4.png" alt="Book 14">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Business Management Today</h3>
+                                        <p>by Sarah Lee</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book5.jpg" alt="Book 15">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Future of Computing</h3>
+                                        <p>by Dr. Amy Chen</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book1.png" alt="Book 16">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Advanced AI Techniques</h3>
+                                        <p>by Dr. John Doe</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book2.png" alt="Book 17">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Engineering Research 2025</h3>
+                                        <p>by Prof. Jane Smith</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book3.png" alt="Book 18">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Modern Medicine & Health</h3>
+                                        <p>by Dr. Alan Green</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book4.png" alt="Book 19">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Business Management Today</h3>
+                                        <p>by Sarah Lee</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book5.jpg" alt="Book 20">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Future of Computing</h3>
+                                        <p>by Dr. Amy Chen</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book1.png" alt="Book 21">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Advanced AI Techniques</h3>
+                                        <p>by Dr. John Doe</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book2.png" alt="Book 22">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Engineering Research 2025</h3>
+                                        <p>by Prof. Jane Smith</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book3.png" alt="Book 23">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Modern Medicine & Health</h3>
+                                        <p>by Dr. Alan Green</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book4.png" alt="Book 24">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Business Management Today</h3>
+                                        <p>by Sarah Lee</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                                <div class="book-card">
+                                    <div class="book-cover">
+                                        <img src="/Final Components/assets/book5.jpg" alt="Book 25">
+                                    </div>
+                                    <div class="book-info">
+                                        <h3>Future of Computing</h3>
+                                        <p>by Dr. Amy Chen</p>
+                                    </div>
+                                    <div class="book-buttons">
+                                        <button class="preview-btn">Preview</button>                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <button class="pag-btn" id="first-btn">First</button>
+                            <button class="pag-btn" id="back-btn">Back</button>
+
+                            <div class="page-numbers">
+                                <button class="page" data-page="1">1</button>
+                                <button class="page" data-page="2">2</button>
+                                <button class="page" data-page="3">3</button>
+                                <button class="page" data-page="4">4</button>
+                                <button class="page" data-page="5">5</button>
+                                <button class="page" data-page="6">6</button>
+                            </div>
+
+                            <button class="pag-btn" id="next-btn">Next</button>
+                            <button class="pag-btn" id="last-btn">Last</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="products-components.js"></script>
+</body>
+
+</html>

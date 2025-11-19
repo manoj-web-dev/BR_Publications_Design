@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="BR Publications - Author Profile and Portfolio">
+    <meta name="keywords" content="author, research, publications, portfolio">
+
+    <title>BR Publications - Author Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../images/BR_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="authordetails-components.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="author-hero">
+        <a href="javascript:history.back()" class="back-button" onclick="loadPage('productdetails-components')">
+            <i class="fas fa-arrow-left"></i> Back to Product
+        </a>
+    </section>
+
+    <!-- Author Profile Card -->
+    <div class="author-profile-card fade-in">
+        <div class="profile-header">
+            <div class="author-image-container">
+                <img src="https://via.placeholder.com/200x200/1e3c72/ffffff?text=Dr.+Jane+Doe" alt="Dr. Jane Doe"
+                    class="author-image">
+                <div class="verified-badge" title="Verified Author">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+
+            <div class="author-info">
+                <h1>Dr. Jane Doe</h1>
+                <p class="author-designation">Professor of Educational Technology | Ph.D., Stanford University</p>
+
+                <div class="author-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45+</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Citations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Conferences</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link google" title="Google Scholar">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-link researchgate" title="ResearchGate">
+                        <i class="fab fa-researchgate"></i>
+                    </a>
+                    <a href="#" class="social-link orcid" title="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- Biography Section -->
+        <section class="section slide-up" style="animation-delay: 0.1s">
+            <h2 class="section-title">
+                <i class="fas fa-user-circle"></i>
+                Biography
+            </h2>
+            <p class="biography-text">
+                Dr. Jane Doe is a distinguished Professor of Educational Technology with over 20 years of experience in
+                academia and research. She earned her Ph.D. in Educational Technology from Stanford University and has
+                since been at the forefront of integrating digital innovations into educational practices.
+            </p>
+            <p class="biography-text">
+                Her research focuses on artificial intelligence in education, learning analytics, and digital
+                transformation in higher education. Dr. Doe has published extensively in top-tier journals and has been
+                invited as a keynote speaker at numerous international conferences.
+            </p>
+            <p class="biography-text">
+                She currently serves as the Director of the Center for Digital Learning Innovation and has received
+                multiple awards for her contributions to educational technology research and practice.
+            </p>
+
+            <h3 style="color: var(--primary-blue); margin: 25px 0 15px; font-size: clamp(18px, 2.5vw, 22px);">
+                <i class="fas fa-lightbulb" style="color: var(--accent-gold); margin-right: 10px;"></i>
+                Areas of Expertise
+            </h3>
+            <div class="expertise-tags">
+                <span class="tag">Artificial Intelligence in Education</span>
+                <span class="tag">Learning Analytics</span>
+                <span class="tag">Digital Transformation</span>
+                <span class="tag">Educational Technology</span>
+                <span class="tag">Online Learning</span>
+                <span class="tag">Instructional Design</span>
+                <span class="tag">Data-Driven Education</span>
+                <span class="tag">Virtual Reality</span>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="section slide-up" style="animation-delay: 0.2s">
+            <h2 class="section-title">
+                <i class="fas fa-book"></i>
+                Books & Publications
+            </h2>
+
+            <div class="publications-grid">
+                <!-- Book 1 -->
+                <div class="publication-card">
+                    <span class="publication-type">Book</span>
+                    <h3 class="publication-title">Digital Transformation in Modern Education</h3>
+                    <p class="publication-meta">
+                        <i class="fas fa-calendar-alt"></i>Published: December 2024
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-building"></i>BR Publications
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-fingerprint"></i>ISBN: 978-1-2345-6789-0
+                    </p>
+                    <div class="publication-actions">
+                        <button class="pub-btn pub-btn-primary">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="pub-btn pub-btn-secondary">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="publication-card">
+                    <span class="publication-type">Book</span>
+                    <h3 class="publication-title">AI-Powered Learning: Future of Education</h3>
+                    <p class="publication-meta">
+                        <i class="fas fa-calendar-alt"></i>Published: June 2023
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-building"></i>Academic Press
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-fingerprint"></i>ISBN: 978-1-2345-6788-3
+                    </p>
+                    <div class="publication-actions">
+                        <button class="pub-btn pub-btn-primary">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                        <button class="pub-btn pub-btn-secondary">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Journal 1 -->
+                <div class="publication-card">
+                    <span class="publication-type"
+                        style="background: linear-gradient(135deg, #28a745, #218838);">Journal Article</span>
+                    <h3 class="publication-title">Learning Analytics for Student Success: A Comprehensive Study</h3>
+                    <p class="publication-meta">
+                        <i class="fas fa-calendar-alt"></i>Published: March 2024
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-book-open"></i>Journal of Educational Technology
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-quote-right"></i>Citations: 127
+                    </p>
+                    <div class="publication-actions">
+                        <button class="pub-btn pub-btn-primary">
+                            <i class="fas fa-eye"></i> View Article
+                        </button>
+                        <button class="pub-btn pub-btn-secondary">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Journal 2 -->
+                <div class="publication-card">
+                    <span class="publication-type"
+                        style="background: linear-gradient(135deg, #28a745, #218838);">Journal Article</span>
+                    <h3 class="publication-title">Virtual Reality in Higher Education: Impact and Implementation</h3>
+                    <p class="publication-meta">
+                        <i class="fas fa-calendar-alt"></i>Published: November 2023
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-book-open"></i>International Journal of EdTech Research
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-quote-right"></i>Citations: 89
+                    </p>
+                    <div class="publication-actions">
+                        <button class="pub-btn pub-btn-primary">
+                            <i class="fas fa-eye"></i> View Article
+                        </button>
+                        <button class="pub-btn pub-btn-secondary">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Journal 3 -->
+                <div class="publication-card">
+                    <span class="publication-type"
+                        style="background: linear-gradient(135deg, #28a745, #218838);">Journal Article</span>
+                    <h3 class="publication-title">Data-Driven Decision Making in Educational Institutions</h3>
+                    <p class="publication-meta">
+                        <i class="fas fa-calendar-alt"></i>Published: August 2023
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-book-open"></i>Educational Research Review
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-quote-right"></i>Citations: 156
+                    </p>
+                    <div class="publication-actions">
+                        <button class="pub-btn pub-btn-primary">
+                            <i class="fas fa-eye"></i> View Article
+                        </button>
+                        <button class="pub-btn pub-btn-secondary">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Book Chapter -->
+                <div class="publication-card">
+                    <span class="publication-type" style="background: linear-gradient(135deg, #6f42c1, #5a32a3);">Book
+                        Chapter</span>
+                    <h3 class="publication-title">Chapter 12: Emerging Trends in Educational Technology</h3>
+                    <p class="publication-meta">
+                        <i class="fas fa-calendar-alt"></i>Published: February 2024
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-book"></i>Handbook of Modern Education
+                    </p>
+                    <p class="publication-meta">
+                        <i class="fas fa-users"></i>Co-authored with Dr. Peter Smith
+                    </p>
+                    <div class="publication-actions">
+                        <button class="pub-btn pub-btn-primary">
+                            <i class="fas fa-eye"></i> View Chapter
+                        </button>
+                        <button class="pub-btn pub-btn-secondary">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conferences Section -->
+        <section class="section slide-up" style="animation-delay: 0.3s">
+            <h2 class="section-title">
+                <i class="fas fa-users"></i>
+                Conferences & Events
+            </h2>
+
+            <div class="conference-list">
+                <!-- Conference 1 -->
+                <div class="conference-card">
+                    <div class="conference-header">
+                        <h3 class="conference-title">International Conference on Educational Technology 2024</h3>
+                        <span class="conference-role">Keynote Speaker</span>
+                    </div>
+                    <div class="conference-details">
+                        <div class="conference-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boston, Massachusetts, USA</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-calendar"></i>
+                            <span>October 15-17, 2024</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-presentation"></i>
+                            <span>Topic: AI in Modern Classrooms</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-users"></i>
+                            <span>1,200+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference 2 -->
+                <div class="conference-card">
+                    <div class="conference-header">
+                        <h3 class="conference-title">Global Summit on Digital Learning 2024</h3>
+                        <span class="conference-role">Session Chair</span>
+                    </div>
+                    <div class="conference-details">
+                        <div class="conference-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>London, United Kingdom</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-calendar"></i>
+                            <span>June 8-10, 2024</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-presentation"></i>
+                            <span>Session: Learning Analytics Track</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-users"></i>
+                            <span>800+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference 3 -->
+                <div class="conference-card">
+                    <div class="conference-header">
+                        <h3 class="conference-title">Asia-Pacific EdTech Conference 2023</h3>
+                        <span class="conference-role"
+                            style="background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));">Organizer</span>
+                    </div>
+                    <div class="conference-details">
+                        <div class="conference-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Singapore</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-calendar"></i>
+                            <span>November 20-22, 2023</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-presentation"></i>
+                            <span>Conference Chair</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-users"></i>
+                            <span>1,500+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference 4 -->
+                <div class="conference-card">
+                    <div class="conference-header">
+                        <h3 class="conference-title">Workshop on Data-Driven Education</h3>
+                        <span class="conference-role"
+                            style="background: linear-gradient(135deg, #17a2b8, #138496);">Workshop Leader</span>
+                    </div>
+                    <div class="conference-details">
+                        <div class="conference-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, California, USA</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-calendar"></i>
+                            <span>March 5-6, 2023</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-presentation"></i>
+                            <span>Hands-on Training Workshop</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-users"></i>
+                            <span>150 Participants</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference 5 -->
+                <div class="conference-card">
+                    <div class="conference-header">
+                        <h3 class="conference-title">European Conference on Learning Technologies</h3>
+                        <span class="conference-role">Panelist</span>
+                    </div>
+                    <div class="conference-details">
+                        <div class="conference-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Amsterdam, Netherlands</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-calendar"></i>
+                            <span>September 12-14, 2023</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-presentation"></i>
+                            <span>Panel: Future of EdTech</span>
+                        </div>
+                        <div class="conference-detail">
+                            <i class="fas fa-users"></i>
+                            <span>950+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Recognition Section -->
+        <section class="section slide-up" style="animation-delay: 0.4s">
+            <h2 class="section-title">
+                <i class="fas fa-trophy"></i>
+                Awards & Recognition
+            </h2>
+
+            <div class="awards-list">
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>Excellence in Educational Technology Research Award</h4>
+                        <p><strong>International EdTech Association</strong></p>
+                        <p><i class="fas fa-calendar"></i> 2024</p>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>Best Paper Award - AI in Education</h4>
+                        <p><strong>Global Conference on Educational Innovation</strong></p>
+                        <p><i class="fas fa-calendar"></i> 2023</p>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>Distinguished Professor Award</h4>
+                        <p><strong>Stanford University</strong></p>
+                        <p><i class="fas fa-calendar"></i> 2022</p>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>Outstanding Contribution to Digital Learning</h4>
+                        <p><strong>National Education Technology Council</strong></p>
+                        <p><i class="fas fa-calendar"></i> 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="section slide-up" style="animation-delay: 0.5s">
+            <h2 class="section-title">
+                <i class="fas fa-address-card"></i>
+                Contact Information
+            </h2>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email Address</h4>
+                        <p>jane.doe@university.edu</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone Number</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Institution</h4>
+                        <p>Stanford University, California</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Personal Website</h4>
+                        <p>www.janedoe-research.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Office Location</h4>
+                        <p>Building 160, Room 325<br>Stanford, CA 94305</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Office Hours</h4>
+                        <p>Monday - Friday<br>2:00 PM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="authordetails-components.js"></script>
+</body>
+</html>

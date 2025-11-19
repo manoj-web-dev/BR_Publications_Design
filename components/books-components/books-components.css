@@ -1,0 +1,547 @@
+:root {
+    --nav-bg: #142850;
+    --nav-dropdown: #1e3c72;
+    --accent: #ffb703;
+    --white: #fff;
+    --header-bg: #3d5a80;
+    --primary-blue: #1e3c72;
+    --secondary-blue: #2a5298;
+    --accent-gold: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.books-hero {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%231e3c72" width="1200" height="400"/><circle cx="100" cy="100" r="80" fill="rgba(255,193,7,0.1)"/><circle cx="1100" cy="300" r="120" fill="rgba(255,193,7,0.08)"/></svg>');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.books-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.books-hero h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.books-hero p {
+    font-size: clamp(16px, 3vw, 20px);
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main Wrapper */
+.books-wrapper {
+    max-width: 1200px;
+    margin: -60px auto 40px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.books-container {
+    width: 100%;
+}
+
+/* Section Styling */
+.books-section {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.books-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-gold));
+}
+
+.books-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Headers */
+.books-section-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.books-section-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 5px 20px rgba(30, 60, 114, 0.3);
+    flex-shrink: 0;
+}
+
+.books-section-title-wrapper h2 {
+    font-size: clamp(22px, 4vw, 28px);
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.books-section-subtitle {
+    color: #666;
+    font-size: clamp(14px, 2.5vw, 17px);
+    line-height: 1.6;
+}
+
+/* Intro Box */
+.books-section-intro {
+    font-size: clamp(14px, 2vw, 16px);
+    color: #444;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.04) 0%, rgba(255, 193, 7, 0.04) 100%);
+    border-left: 5px solid var(--accent-gold);
+    border-radius: 12px;
+}
+
+.books-section-intro strong {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.books-section-intro ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.books-section-intro ul li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+}
+
+.books-section-intro ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Services Grid */
+.books-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.books-services-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.books-services-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(180deg, var(--primary-blue), var(--accent-gold));
+    transition: height 0.4s ease;
+}
+
+.books-services-card:hover::before {
+    height: 100%;
+}
+
+.books-services-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border-color: var(--accent-gold);
+}
+
+.books-services-card h3 {
+    color: var(--primary-blue);
+    font-size: clamp(16px, 2.5vw, 19px);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.books-services-card h3::before {
+    content: '✓';
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.books-services-card h4 {
+    color: var(--primary-blue);
+    font-size: 16px;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+.books-services-card p,
+.books-services-card ul,
+.books-services-card ol {
+    color: #555;
+    line-height: 1.8;
+    font-size: clamp(13px, 2vw, 15px);
+}
+
+.books-services-card ul,
+.books-services-card ol {
+    padding-left: 20px;
+}
+
+.books-services-card li {
+    margin-bottom: 8px;
+}
+
+.books-services-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.books-services-card table th,
+.books-services-card table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.books-services-card table th {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    font-weight: 600;
+}
+
+.books-services-card table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.benefits-section h3 {
+    font-size: clamp(22px, 4vw, 28px);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateX(8px);
+}
+
+.benefit-icon {
+    font-size: 2.2rem;
+    flex-shrink: 0;
+}
+
+.benefit-text h4 {
+    font-size: clamp(16px, 2.5vw, 18px);
+    margin-bottom: 10px;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+
+.benefit-text p {
+    opacity: 0.95;
+    line-height: 1.7;
+    font-size: clamp(13px, 2vw, 15px);
+}
+
+.benefit-text a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.benefit-text a:hover {
+    text-decoration: underline;
+}
+
+/* CTA Section */
+.books-cta-section {
+    text-align: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.06) 0%, rgba(255, 193, 7, 0.06) 100%);
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.books-cta-section h3 {
+    font-size: clamp(24px, 4vw, 32px);
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.books-cta-section p {
+    font-size: clamp(16px, 3vw, 19px);
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.books-cta-button {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #ff8c00 100%);
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: clamp(16px, 2.5vw, 18px);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.books-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 193, 7, 0.5);
+}
+
+/* Animation */
+.animate-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .books-wrapper {
+        margin: -50px auto 30px;
+    }
+
+    .books-section {
+        padding: 40px 30px;
+    }
+
+    .books-services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .books-hero {
+        padding: 60px 15px;
+    }
+
+    .books-wrapper {
+        padding: 0 15px;
+        margin: -40px auto 20px;
+    }
+
+    .books-section {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .books-section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .books-section-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    .books-section-intro {
+        padding: 20px;
+    }
+
+    .books-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .books-services-card {
+        padding: 25px 20px;
+    }
+
+    .benefits-section {
+        padding: 40px 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .books-cta-section {
+        padding: 40px 20px;
+    }
+
+    .books-cta-button {
+        padding: 15px 30px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .books-hero {
+        padding: 50px 10px;
+    }
+
+    .books-section {
+        padding: 25px 15px;
+    }
+
+    .books-section-intro {
+        padding: 15px;
+    }
+
+    .books-services-card {
+        padding: 20px 15px;
+    }
+
+    .books-services-card table {
+        font-size: 12px;
+    }
+
+    .books-services-card table th,
+    .books-services-card table td {
+        padding: 8px;
+    }
+
+    .benefit-item {
+        padding: 20px 15px;
+    }
+}

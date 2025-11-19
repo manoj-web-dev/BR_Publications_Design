@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="BR Publications - Your source for the latest research and publications in the field of science and technology.">
+    <meta name="keywords" content="html, css, javascript">
+    <title>BR Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css">
+    <link rel="stylesheet" href="home-components.css">
+    <link rel="icon" href="./Final Components/assets/BR_logo.png" type="image/x-icon">
+</head>
+
+<body>
+        <section id="homePage">
+            <section class="slider-wrapper" id="home-slider">
+                <div class="hero-slider">
+                    <div class="slides fade">
+                        <img src="slider - 1.avif" alt="Research & Publications">
+                        <div class="slider-text">Advancing Academic Research Globally</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="slider - 2.webp" alt="Book Publications">
+                        <div class="slider-text">Empowering Authors & Scholars Worldwide</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="slider - 3.avif" alt="Innovation & Knowledge">
+                        <div class="slider-text">Publishing Innovation & Knowledge Since 20XX</div>
+                    </div>
+
+                    <!-- Slider Buttons -->
+                    <div class="slider-dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="welcome-section" id="home-welcome">
+                <div class="container">
+
+                    <p class="welcome-tag">Greetings & Welcome</p>
+
+                    <h2 class="welcome-title">BR Publications</h2>
+                    <div class="title-underline"></div>
+
+                    <p class="welcome-text">
+                        <strong>BR Publications</strong> is dedicated to publishing a diverse range of high-quality
+                        academic and professional works for readers and researchers with a passion for knowledge across
+                        multidisciplinary domains. Our publications span <strong>Sciences, Medical Sciences,
+                            Engineering,
+                            Technology, Humanities</strong> and more—reflecting our commitment to academic excellence
+                        and
+                        intellectual growth.
+                    </p>
+                </div>
+            </section>
+
+            <section class="pub-banner" id="home-banner">
+                <div class="pub-content">
+
+                    <h2><span class="highlight-text">BR</span> Publications</h2>
+                    <p class="pub-subtitle">
+                        Offering publishing opportunities across <strong>250+ topics</strong> in five major domains
+                    </p>
+
+                    <div class="pub-domains">
+                        <span><strong>Business & Management</strong></span>
+                        <span><strong>Education & Social Sciences</strong></span>
+                        <span><strong>Engineering Science</strong></span> <br>
+                        <span><strong>Scientific, Technical & Medical</strong></span>
+                        <span><strong>Interdisciplinary & Mathematical Sciences</strong></span>
+                    </div>
+
+                    <a href="#" class="discover-btn"><cite>Discover More</cite></a>
+
+                </div>
+            </section>
+
+            <section class="subjects-section" id="home-subjects">
+                <div class="container">
+
+                    <!-- Left side: Subjects -->
+                    <div class="subjects-box">
+                        <h3>Subjects</h3>
+                        <ul class="subject-list">
+                            <li><a href="#" onclick="loadPage('subjects-components', 'engineering')">Engineering & Management <i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="#" onclick="loadPage('subjects-components', 'medical')">Medical & Health Sciences <i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="#" onclick="loadPage('subjects-components', 'interdisciplinary')">Interdisciplinary Sciences <i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                        <a href="#" class="subject-login-btn"><i class="fas fa-user"></i> Login</a>
+                    </div>
+
+                    <!-- Right side: Buttons -->
+                    <div class="action-buttons">
+                        <div class="action-card" onclick="loadPage('manuscript-components', 'resNovaPage')">
+                            <i class="fas fa-book-open"></i>
+                            <span>Submit a Journal Manuscript</span>
+                        </div>
+
+                        <div class="action-card" onclick="loadPage('manuscript-components', 'resNovaPage')">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Submit a Book Proposal</span>
+                        </div>
+
+                        <div class="action-card"onclick="loadPage('manuscript-components', 'resNovaPage')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Submit a textbook</span>
+                        </div>
+
+                        <div class="action-card" onclick="loadPage('ipr-components', 'ipr-Page')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Intellectual property Rights (IPR) Services</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- TRENDING BOOKS SECTION -->
+            <section class="trending-books" id="home-books">
+                <h2 class="section-title">Academic Books</h2>
+                <div class="title-underline"></div>
+
+                <div class="book-carousel">
+                    <div class="book-track">
+
+                        <!-- Example Book Cards -->
+                        <div class="book-card">
+                            <div class="book-cover"><img src="/Final Components/assets/book1.png" alt="Book 1"></div>
+                            <div class="book-info">
+                                <h3>Advanced AI Techniques</h3>
+                                <p>by Dr. John Doe</p>
+                                <div class="book-buttons">
+                                    <button class="preview-btn">Preview</button>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover"><img src="/Final Components/assets/book2.png" alt="Book 2"></div>
+                            <div class="book-info">
+                                <h3>Engineering Research 2025</h3>
+                                <p>by Prof. Jane Smith</p>
+                                <div class="book-buttons">
+                                    <button class="preview-btn">Preview</button>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover"><img src="/Final Components/assets/book3.png" alt="Book 3"></div>
+                            <div class="book-info">
+                                <h3>Modern Medicine & Health</h3>
+                                <p>by Dr. Alan Green</p>
+                                <div class="book-buttons">
+                                    <button class="preview-btn">Preview</button>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover"><img src="/Final Components/assets/book4.png" alt="Book 4"></div>
+                            <div class="book-info">
+                                <h3>Business Management Today</h3>
+                                <p>by Sarah Lee</p>
+                                <div class="book-buttons">
+                                    <button class="preview-btn">Preview</button>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-card">
+                            <div class="book-cover"><img src="/Final Components/assets/book5.jpg" alt="Book 5"></div>
+                            <div class="book-info">
+                                <h3>Future of Computing</h3>
+                                <p>by Dr. Amy Chen</p>
+                                <div class="book-buttons">
+                                    <button class="preview-btn">Preview</button>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRENDING JOURNALS SECTION -->
+            <!-- <section class="trending-journals" id="home-journals">
+                <h2 class="section-title">Trending Journals</h2>
+                <div class="title-underline"></div>
+
+                <div class="journal-carousel">
+                    <div class="journal-track">
+
+                        <div class="journal-card">
+                            <div class="journal-cover"><img src="journal1.png" alt="Journal 1">
+                            </div>
+                            <div class="journal-info">
+                                <h3>International Journal of Robotics</h3>
+                                <p>Vol. 15 • Issue 2</p>
+                                <div class="journal-buttons">
+                                    <button class="view-btn">View Journal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journal-card">
+                            <div class="journal-cover"><img src="journal2.png" alt="Journal 2">
+                            </div>
+                            <div class="journal-info">
+                                <h3>Medical Innovations & Research</h3>
+                                <p>Vol. 10 • Issue 5</p>
+                                <div class="journal-buttons">
+                                    <button class="view-btn">View Journal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journal-card">
+                            <div class="journal-cover"><img src="journal3.png" alt="Journal 3">
+                            </div>
+                            <div class="journal-info">
+                                <h3>Engineering Advances</h3>
+                                <p>Vol. 22 • Issue 3</p>
+                                <div class="journal-buttons">
+                                    <button class="view-btn">View Journal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journal-card">
+                            <div class="journal-cover"><img src="journal4.png" alt="Journal 4">
+                            </div>
+                            <div class="journal-info">
+                                <h3>Science & Innovation</h3>
+                                <p>Vol. 8 • Issue 1</p>
+                                <div class="journal-buttons">
+                                    <button class="view-btn">View Journal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journal-card">
+                            <div class="journal-cover"><img src="journal5.png" alt="Journal 5">
+                            </div>
+                            <div class="journal-info">
+                                <h3>Science & Innovation</h3>
+                                <p>Vol. 8 • Issue 1</p>
+                                <div class="journal-buttons">
+                                    <button class="view-btn">View Journal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journal-card">
+                            <div class="journal-cover"><img src="journal6.png" alt="Journal 6">
+                            </div>
+                            <div class="journal-info">
+                                <h3>Science & Innovation</h3>
+                                <p>Vol. 10 • Issue 2</p>
+                                <div class="journal-buttons">
+                                    <button class="view-btn">View Journal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+        </section>
+    <script src="home-components.js"></script>
+</body>
+</html>

@@ -1,0 +1,576 @@
+/* =====  Home section starts here ===== */
+
+/* home-slider starts */
+/* Wrapper to add margins around slider */
+.slider-wrapper {
+    width: 85%;
+    margin: 40px auto;
+    /* mt + center container */
+}
+
+/* Box effect */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* reduce height to box style */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    background: #000;
+}
+
+/* Image */
+.hero-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slides */
+.slides {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text overlay */
+.slider-text {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.2s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .slider-wrapper {
+        width: 95%;
+    }
+
+    .hero-slider {
+        height: 260px;
+    }
+
+    .slider-text {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+/* Dots wrapper */
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+/* Dot buttons */
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.dot:hover {
+    background: #2b65f8;
+    /* Hover blue */
+}
+
+/* Active */
+.active-dot {
+    background: #2b65f8;
+    border-color: #fff;
+}
+
+/* Better touch size on mobile */
+@media(max-width:768px) {
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* home-slider ends */
+
+/* Welcome Section starts here*/
+.welcome-section {
+    background: #fff;
+}
+
+.welcome-section .container {
+    display: block !important;
+    width: 85%;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.welcome-tag {
+    display: block !important;
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.welcome-title {
+    display: block !important;
+    font-size: 25px;
+    font-weight: 700;
+    color: #2b65f8;
+    /* Elegant teal tone */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    display: block !important;
+    width: 25px;
+    height: 4px;
+    background: #ffa726;
+    /* blue accent */
+    margin-bottom: 25px;
+}
+
+.welcome-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Welcome Section ends here*/
+
+/* pub banner new starts here */
+/* Publication Banner */
+.pub-banner {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298);
+    padding: 40px 75px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+    margin: 25px auto;
+    width: 80%;
+    max-width: 1700px;
+}
+
+.pub-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.pub-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pub-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    color: #ffc107;
+}
+
+.pub-subtitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+.pub-domains {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pub-domains span {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.discover-btn {
+    background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 193, 7, 0.3);
+    display: inline-block;
+    color: black;
+}
+
+.discover-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 193, 7, 0.4);
+}
+
+/* pub Banner new ends here */
+
+/* Subjects and action buttons */
+
+/* Subjects & Action Buttons Section */
+.subjects-section {
+  background: #f8fbff;
+  padding: 20px 0;
+}
+
+.subjects-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 86%;
+  max-width: 1700px;
+  margin: auto;
+  gap: 30px;
+}
+
+/* Left box */
+.subjects-box {
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.subjects-box h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.subject-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.subject-list li {
+  margin: 10px 0;
+}
+
+.subject-list li a {
+  color: #0066cc;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.subject-list li a:hover {
+  color: #ff6a00;
+  padding-left: 5px;
+}
+
+/* Login button */
+.subject-login-btn {
+  display: block;
+  text-align: center;
+  background: #008e4f;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.subject-login-btn:hover {
+  background: #006d3a;
+}
+
+/* Right buttons */
+.action-buttons {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.action-card {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-card i {
+  font-size: 30px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.action-card span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 118, 200, 0.3);
+  background: #003366;
+}
+
+.action-card:hover i,
+.action-card:hover span {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .subjects-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subjects-box {
+    width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* End of Subjects & Action Buttons Section */
+
+/* ======================
+       GENERAL STYLES
+    ====================== */
+
+.trending-section {
+    padding: 60px 80px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.trending-books,
+.trending-journals {
+    padding: 10px 80px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #2b65f8;
+    text-align: left;
+}
+
+/* ======================
+       CAROUSEL
+    ====================== */
+.book-carousel,
+.journal-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.book-track,
+.journal-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* ======================
+       CARDS
+    ====================== */
+.book-card,
+.journal-card {
+    flex: 0 0 calc(25% - 20px);
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.book-card:hover,
+.journal-card:hover {
+    transform: translateY(-10px) scale(1.03) rotateX(5deg);
+    box-shadow: 0 10px 30px rgba(43, 101, 248, 0.3);
+}
+
+.book-cover img,
+.journal-cover img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book-info,
+.journal-info {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.book-info h3,
+.journal-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0;
+    color: #333;
+}
+
+.book-info p,
+.journal-info p {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* ======================
+       BUTTONS
+    ====================== */
+.preview-btn,
+.buy-btn,
+.view-btn {
+    background-color: #2b65f8;
+    border: none;
+    color: #fff;
+    padding: 8px 18px;
+    margin: 4px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.preview-btn:hover,
+.buy-btn:hover,
+.view-btn:hover {
+    background-color: #ffa726;
+    transform: scale(1.1);
+}
+
+.book-buttons,
+.journal-buttons {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.book-card:hover .book-buttons,
+.journal-card:hover .journal-buttons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ======================
+       RESPONSIVE
+    ====================== */
+@media (max-width: 1024px) {
+
+    .book-card,
+    .journal-card {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .book-card,
+    .journal-card {
+        flex: 0 0 100%;
+    }
+
+    .book-cover img,
+    .journal-cover img {
+        height: 240px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+}
+
+/* ======== Home section ends here ======== */
