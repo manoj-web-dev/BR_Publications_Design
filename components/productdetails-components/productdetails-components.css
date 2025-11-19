@@ -420,7 +420,6 @@ body {
     border: 2px solid #dee2e6;
     cursor: pointer;
     border-radius: 50px;
-    font-weight: 600;
     color: var(--primary-blue);
     transition: all 0.3s ease;
     white-space: nowrap;
