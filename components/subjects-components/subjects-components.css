@@ -82,7 +82,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: clamp(36px, 6vw, 56px);
+    font-size: clamp(25px, 6vw, 25px);
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -90,7 +90,7 @@ body {
 }
 
 .hero-content p {
-    font-size: clamp(16px, 3vw, 22px);
+    font-size: clamp(17px, 3vw, 17px);
     opacity: 0.95;
     margin-bottom: 40px;
     line-height: 1.7;
@@ -110,7 +110,7 @@ body {
 
 .domains-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
@@ -164,7 +164,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+    font-size: 25px;
     color: white;
     margin-bottom: 25px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -183,7 +183,7 @@ body {
 }
 
 .domain-card-preview h3 {
-    font-size: clamp(22px, 3vw, 26px);
+    font-size: clamp(17px, 3vw, 17px);
     margin-bottom: 15px;
     font-weight: 700;
 }
@@ -202,7 +202,7 @@ body {
 
 .domain-card-preview p {
     color: #666;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(14px, 2vw, 14px);
     line-height: 1.8;
     margin-bottom: 20px;
 }
@@ -297,7 +297,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 42px;
+    font-size: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     flex-shrink: 0;
 }
@@ -315,7 +315,7 @@ body {
 }
 
 .subject-title h2 {
-    font-size: clamp(28px, 4.5vw, 38px);
+    font-size: clamp(17px, 4.5vw, 17px);
     margin-bottom: 12px;
     font-weight: 700;
 }
@@ -334,7 +334,7 @@ body {
 
 .subject-title p {
     color: #666;
-    font-size: clamp(15px, 2.5vw, 18px);
+    font-size: clamp(15px, 2.5vw, 17px);
     line-height: 1.6;
 }
 
@@ -367,7 +367,7 @@ body {
 
 /* Subsection Title */
 .subsection-title {
-    font-size: clamp(22px, 3.5vw, 28px);
+    font-size: clamp(17px, 3.5vw, 17px);
     margin: 45px 0 30px;
     font-weight: 700;
     display: flex;
@@ -388,7 +388,7 @@ body {
 }
 
 .subsection-title i {
-    font-size: clamp(26px, 4vw, 32px);
+    font-size: clamp(17px, 4vw, 17px);
 }
 
 .engineering .subsection-title i {
@@ -442,7 +442,7 @@ body {
 }
 
 .topic-icon {
-    font-size: 24px;
+    font-size: 17px;
     flex-shrink: 0;
 }
 
@@ -459,7 +459,7 @@ body {
 }
 
 .topic-card span {
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(14px, 2vw, 17px);
     color: #444;
     font-weight: 500;
     line-height: 1.5;
@@ -501,7 +501,7 @@ body {
 }
 
 .research-field h4 {
-    font-size: clamp(16px, 2.5vw, 19px);
+    font-size: clamp(16px, 2.5vw, 17px);
     margin-bottom: 10px;
     font-weight: 700;
     display: flex;
@@ -522,7 +522,7 @@ body {
 }
 
 .research-field h4 i {
-    font-size: 22px;
+    font-size: 14px;
 }
 
 .engineering .research-field h4 i {
@@ -539,7 +539,7 @@ body {
 
 .research-field p {
     color: #666;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(14px, 2vw, 17px);
     line-height: 1.7;
 }
 
@@ -548,8 +548,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
-    margin: 50px 0;
-    padding: 40px;
+    margin: 20px 0;
+    padding: 15px;
     border-radius: 20px;
 }
 
@@ -571,7 +571,7 @@ body {
 }
 
 .stat-number {
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp(17px, 5vw, 17px);
     font-weight: 700;
     display: block;
     margin-bottom: 8px;
@@ -634,7 +634,7 @@ body {
     .subject-icon {
         width: 75px;
         height: 75px;
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .subject-intro {
@@ -660,7 +660,7 @@ body {
     .subject-icon {
         width: 65px;
         height: 65px;
-        font-size: 32px;
+        font-size: 25px;
     }
 
     .subject-intro {

@@ -61,7 +61,7 @@ body {
 }
 
 .resNova-hero h1 {
-    font-size: clamp(28px, 5vw, 42px);
+    font-size: clamp(25px, 5vw, 25px);
     margin-bottom: 10px;
     position: relative;
     z-index: 1;
@@ -106,7 +106,7 @@ body {
 
 .sidebar-card h3 {
     color: var(--primary-blue);
-    font-size: clamp(16px, 2.5vw, 19px);
+    font-size: clamp(16px, 2.5vw, 17px);
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: clamp(13px, 2vw, 15px);
+    font-size: clamp(12px, 2vw, 12px);
     transition: all 0.3s ease;
     padding: 10px 12px;
     border-radius: 8px;
@@ -257,11 +257,11 @@ body {
 /* Book Details */
 .book-details {
     flex: 1;
-    min-width: 320px;
+    min-width: 300px;
 }
 
 .book-details h1 {
-    font-size: clamp(24px, 4vw, 32px);
+    font-size: clamp(17px, 4vw, 17px);
     color: var(--primary-blue);
     margin-bottom: 15px;
     font-weight: 700;
@@ -270,7 +270,7 @@ body {
 
 .author-list {
     color: #0077b6;
-    font-size: clamp(16px, 2.5vw, 18px);
+    font-size: clamp(16px, 2.5vw, 17px);
     margin-bottom: 25px;
     font-style: italic;
     font-weight: 500;
@@ -423,7 +423,7 @@ body {
     color: var(--primary-blue);
     transition: all 0.3s ease;
     white-space: nowrap;
-    font-size: clamp(13px, 2vw, 15px);
+    font-size: clamp(12px, 2vw, 14px);
     position: relative;
     overflow: hidden;
 }
@@ -496,7 +496,7 @@ body {
 
 .tab-content h3 {
     color: var(--primary-blue);
-    font-size: clamp(20px, 3vw, 26px);
+    font-size: clamp(17px, 3vw, 17px);
     margin-bottom: 20px;
     font-weight: 700;
     display: flex;
@@ -515,7 +515,7 @@ body {
 .tab-content p {
     line-height: 1.8;
     color: #555;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(12px, 2vw, 12px);
     margin-bottom: 15px;
 }
 
@@ -528,7 +528,7 @@ body {
     padding: 12px 0 12px 30px;
     position: relative;
     color: #555;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(12px, 2vw, 14px);
     line-height: 1.6;
     border-bottom: 1px solid #e9ecef;
     transition: all 0.3s ease;
