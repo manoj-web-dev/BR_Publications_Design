@@ -1,0 +1,131 @@
+:root {
+    --nav-bg: #142850;
+    --nav-dropdown: #1e3c72;
+    --accent: #ffb703;
+    --white: #fff;
+    --header-bg: #3d5a80;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+
+/* ===== journal Section Styles ===== */
+.journal-hero {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%);
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.journal-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 6s ease-in-out infinite;
+}
+
+.journal-hero h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.journal-hero p {
+    font-size: 17px;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+.journal-wrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: -60px auto 10px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.journal-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.journal-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.journal-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #1e3c72, #ffc107);
+}
+
+.journal-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.cta-section {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.05) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.cta-section h3 {
+    font-size: 25px;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+
+.animate-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 968px) {
+    .journal-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .journal-section {
+        padding: 25px 20px;
+    }
+}

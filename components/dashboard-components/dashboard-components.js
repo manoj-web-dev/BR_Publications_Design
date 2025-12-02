@@ -1,4 +1,6 @@
 
+
+
 const header = document.getElementById('header');
 const navBar = document.getElementById('navBar');
 const hamburger = document.getElementById('hamburger');
@@ -8,11 +10,12 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
 let lastScroll = 0;
 
 // ✅ Function to handle sticky nav + header visibility
+
+
 function handleScroll() {
     const headerHeight = header.offsetHeight;
     const currentScroll = window.pageYOffset;
 
-    // Stick nav and hide header
     if (currentScroll > headerHeight) {
         header.classList.add('hidden');
         navBar.classList.add('sticky');
@@ -25,10 +28,15 @@ function handleScroll() {
     if (navLinks.classList.contains('show')) {
         navLinks.classList.remove('show');
         hamburger.classList.remove('active');
-        dropdowns.forEach(d => d.classList.remove('active'));
+        dropdowns.forEach(d => {
+            d.classList.remove('active');
+            // Close nested dropdowns too
+            d.querySelectorAll('.dropdown').forEach(nested => {
+                nested.classList.remove('active');
+            });
+        });
     }
 
-    // ✅ If menu is open (e.g., user scrolls slightly), keep its top position synced
     if (navLinks.classList.contains('show')) {
         updateHamburgerMenuTop();
     }
@@ -76,6 +84,9 @@ dropdowns.forEach(dropdown => {
     });
 });
 
+
+
+
 // ✅ Improved outside click logic
 document.addEventListener('click', (e) => {
     const isDropdownToggle = e.target.closest('.dropdown-toggle');
@@ -94,13 +105,119 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// ✅ Dropdown toggle for both parent and nested dropdowns
+// ✅ Dropdown toggle for BOTH parent and nested dropdowns (mobile)
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+    const toggle = dropdown.querySelector(':scope > a.dropdown-toggle');
+
+    if (toggle) {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 1050) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent event bubbling
+
+                // Check if this is a nested dropdown
+                const isNested = dropdown.parentElement.classList.contains('dropdown-content');
+
+                if (isNested) {
+                    // For nested dropdowns, only close siblings
+                    const siblings = dropdown.parentElement.querySelectorAll(':scope > .dropdown');
+                    siblings.forEach(sibling => {
+                        if (sibling !== dropdown) {
+                            sibling.classList.remove('active');
+                        }
+                    });
+                } else {
+                    // For top-level dropdowns, close all other top-level dropdowns
+                    document.querySelectorAll('.nav-links > .dropdown').forEach(d => {
+                        if (d !== dropdown) {
+                            d.classList.remove('active');
+                            // Also close all nested dropdowns inside
+                            d.querySelectorAll('.dropdown').forEach(nested => {
+                                nested.classList.remove('active');
+                            });
+                        }
+                    });
+                }
+
+                // Toggle current dropdown
+                dropdown.classList.toggle('active');
+            }
+        });
+    }
+});
+
+// ✅ Enhanced outside click logic
+// document.addEventListener('click', (e) => {
+//     const isDropdownToggle = e.target.closest('.dropdown-toggle');
+//     const isDropdownContent = e.target.closest('.dropdown-content');
+//     const isHamburger = e.target.closest('#hamburger');
+
+//     // ✅ If clicked outside all dropdowns
+//     if (!isDropdownToggle && !isDropdownContent && !isHamburger) {
+//         dropdowns.forEach(d => {
+//             d.classList.remove('active');
+//             // Close nested dropdowns too
+//             d.querySelectorAll('.dropdown').forEach(nested => {
+//                 nested.classList.remove('active');
+//             });
+//         });
+//     }
+
+//     // ✅ Close the hamburger menu completely if clicked outside nav
+//     if (!navBar.contains(e.target) && navLinks.classList.contains('show')) {
+//         navLinks.classList.remove('show');
+//         hamburger.classList.remove('active');
+//         // Close all dropdowns
+//         dropdowns.forEach(d => {
+//             d.classList.remove('active');
+//             d.querySelectorAll('.dropdown').forEach(nested => {
+//                 nested.classList.remove('active');
+//             });
+//         });
+//     }
+// });
+
+// ✅ Enhanced outside click logic
+document.addEventListener('click', (e) => {
+    const isDropdownToggle = e.target.closest('.dropdown-toggle');
+    const isDropdownContent = e.target.closest('.dropdown-content');
+    const isHamburger = e.target.closest('#hamburger');
+    const isNavLinks = e.target.closest('#navLinks');
+
+    // ✅ If clicked outside all dropdowns and nav
+    if (!isDropdownToggle && !isDropdownContent && !isHamburger && !isNavLinks) {
+        document.querySelectorAll('.dropdown').forEach(d => {
+            d.classList.remove('active');
+        });
+    }
+
+    // ✅ Close the hamburger menu completely if clicked outside nav
+    if (!navBar.contains(e.target) && navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+        hamburger.classList.remove('active');
+        // Close all dropdowns
+        document.querySelectorAll('.dropdown').forEach(d => {
+            d.classList.remove('active');
+        });
+    }
+});
+
 
 // ✅ Handle window resize
+
+
 window.addEventListener('resize', () => {
     if (window.innerWidth > 1050) {
         navLinks.classList.remove('show');
         hamburger.classList.remove('active');
-        dropdowns.forEach(d => d.classList.remove('active'));
+        dropdowns.forEach(d => {
+            d.classList.remove('active');
+            // Close nested dropdowns
+            d.querySelectorAll('.dropdown').forEach(nested => {
+                nested.classList.remove('active');
+            });
+        });
     } else if (navLinks.classList.contains('show')) {
         updateHamburgerMenuTop();
     }
@@ -168,4 +285,5 @@ window.addEventListener('scroll', () => {
 });
 
 /* Floating Action Buttons Functionality ends here */
+
 

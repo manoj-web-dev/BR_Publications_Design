@@ -54,19 +54,31 @@
         <div class="nav-content">
             <div class="hamburger" id="hamburger">
                 <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span>
             </div>
-
             <div class="nav-links" id="navLinks">
                 <a href="#" class="active" onclick="loadPage('home-components', 'homePage')">Home</a>
 
                 <div class="dropdown" data-dropdown>
-                    <a onclick="loadPage('home-components')" class="dropdown-toggle">Journals &
+                    <a onclick="loadPage('aboutjournal-components', 'journal-about')" class="dropdown-toggle">Journals &
                         Publications <i class="fas fa-angle-down"></i>
                     </a>
                     <div class="dropdown-content">
-                        <a  onclick="loadPage('home-components')">JAMES</a>
+                        <div class="dropdown" data-dropdown>
+                            <a onclick="loadPage('aboutjournal-components', 'journal-about')" class="dropdown-toggle">JAMES
+                            </a>
+                            <div class="dropdown-content">
+                                <a onclick="loadPage('aboutjournal-components', 'journal-about')">About the Journal</a>
+                                <a onclick="loadPage('aboutjournal-components', 'aim-section')">Aims & Scope</a>
+                                <a onclick="loadPage('editorialteam-components', 'journal-Editorial')">Editorial Board</a>
+                                <a onclick="loadPage('currentissues-components', 'journal-current-issues')">Current Issue</a>
+                                <a onclick="loadPage('archives-components', 'journal-archive')">Archive / Past Issues</a>
+                                <a onclick="loadPage('journalSubmission-components', 'journal-submission')">Submission</a>
+                            </div>
+                        </div>
+                        <a onclick="loadPage('journalguidelines-components', 'journal-guidelines')">Author Guidelines (Journals)</a>
+                        <a onclick="loadPage('JournalEthics-components', 'journal-ethics')">Peer Review Process</a>
+                        <a onclick="loadPage('JournalEthics-components', 'journal-ethics')">Publication Ethics / Retractions</a>
                     </div>
                 </div>
 
@@ -81,8 +93,8 @@
                     </div>
                 </div>
 
-                <div class="dropdown" data-dropdown>
-                    <a href="#" class="dropdown-toggle" onclick="loadPage('books-components')">Book Publications
+                <div class="dropdown" data-dropdown> <a href="#" class="dropdown-toggle"
+                        onclick="loadPage('books-components')">Book Publications
                         <i class="fas fa-angle-down"></i>
                     </a>
                     <div class="dropdown-content">
@@ -102,7 +114,16 @@
                     </div>
                 </div>
 
-                <a href="#"  onclick="loadPage('home-components')">Research & Projects</a>
+                <div class="dropdown" data-dropdown>
+                    <a href="#" class="dropdown-toggle">Research & Projects<i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadPage('webapp-components', 'main-content')">Web Application Development</a>
+                        <a href="#" onclick="loadPage('mobileapp-components', 'main-content')">Mobile Application Development</a>
+                        <!-- <a onclick="loadPage('studentsproject-components', 'main-content')">Students Projects</a> -->
+                        <a onclick="loadPage('studentsinternship-components', 'main-content')">Students Internship with Projects</a>
+                    </div>
+                </div>
                 <a onclick="loadPage('aboutus-components', 'aboutPage')">About Us</a>
                 <a onclick="loadPage('contactus-components', 'contactPage')">Contact Us</a>
             </div>
@@ -156,19 +177,6 @@
                     <li><i class="fas fa-angle-right"></i><a href="#"> Book Publications</a></li>
                 </ul>
             </div>
-
-      
-            <div class="footer-column">
-                <h3>Policy</h3>
-                <div class="underline"></div>
-                <ul class="link-list">
-                    <li><i class="fa-solid fa-angle-right"></i><a href="#"> Privacy Policy</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="#"> Shipping & Cancellation</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="#"> Terms & Conditions</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="#"> Return & Refund</a></li>
-                </ul>
-            </div>
-
       
             <div class="footer-column">
                 <h3>Work With Us</h3>

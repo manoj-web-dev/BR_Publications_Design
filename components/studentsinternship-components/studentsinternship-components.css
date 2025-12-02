@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #188df5 0%, #2582a6 100%);
+    color: white;
+    padding: 20px 0 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: white;
+    color: #4facfe;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+.section {
+    padding: 30px 0;
+}
+
+.section:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #2d3748;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 17px;
+    color: #718096;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Overview Grid */
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.overview-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.overview-card h3 {
+    color: #4facfe;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.overview-card p {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.overview-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.overview-card ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.overview-card ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4facfe;
+    font-weight: bold;
+}
+
+/* Domains Grid */
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.domain-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #4facfe;
+    transition: transform 0.3s;
+}
+
+.domain-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.domain-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #4facfe;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.domain-card h4 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4facfe;
+}
+
+.benefit-card h4 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.benefit-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.benefit-card ul li {
+    padding: 6px 0;
+    color: #4a5568;
+    padding-left: 20px;
+    position: relative;
+}
+
+.benefit-card ul li:before {
+    content: "🎯";
+    position: absolute;
+    left: 0;
+}
+
+/* Pricing Section */
+.pricing-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.price {
+    font-size: 48px;
+    color: #4facfe;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price-note {
+    color: #718096;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.highlight-box h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.highlight-box p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* FAQ */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2d3748;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+.faq-question:hover {
+    background: #f7fafc;
+}
+
+.faq-answer {
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 25px 25px;
+    max-height: 500px;
+}
+
+.faq-icon {
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4facfe;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-button {
+    background: #4facfe;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #3a9de8;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+}

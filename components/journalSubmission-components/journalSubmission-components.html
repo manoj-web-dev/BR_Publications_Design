@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submit an Article - JAMES | BR Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../images/BR_logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="journalSubmission-components.css">
+</head>
+
+<body>
+
+    <section class="journal-submission" id="journal-submission">
+
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Progress Section -->
+            <div class="progress-section">
+                <h1 style="margin-bottom: 20px; color: var(--text-dark);">Submit an Article</h1>
+                <div class="progress-steps">
+                    <div class="progress-line" id="progressLine" style="width: 0%"></div>
+
+                    <div class="step-item active" data-step="1">
+                        <div class="step-number">1</div>
+                        <span class="step-label">Start</span>
+                    </div>
+
+                    <div class="step-item" data-step="2">
+                        <div class="step-number">2</div>
+                        <span class="step-label">Upload Submission</span>
+                    </div>
+
+                    <div class="step-item" data-step="3">
+                        <div class="step-number">3</div>
+                        <span class="step-label">Enter Metadata</span>
+                    </div>
+
+                    <div class="step-item" data-step="4">
+                        <div class="step-number">4</div>
+                        <span class="step-label">Confirmation</span>
+                    </div>
+
+                    <div class="step-item" data-step="5">
+                        <div class="step-number">5</div>
+                        <span class="step-label">Next Steps</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1: Start -->
+            <div class="content-card step-content active" id="step1">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h2>Section Policy</h2>
+                </div>
+                <p class="section-description">Section default policy</p>
+
+                <div class="section-header" style="margin-top: 30px;">
+                    <div class="section-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Submission Requirements</h2>
+                </div>
+                <p class="section-description">You must read and acknowledge that you've completed the requirements
+                    below
+                    before proceeding.</p>
+
+                <div class="checkbox-list">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="req1" required>
+                        <label for="req1">The submission has not been previously published, nor is it before another
+                            journal
+                            for consideration (or an explanation has been provided in Comments to the Editor).</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="req2" required>
+                        <label for="req2">The submission file is in OpenOffice, Microsoft Word, or RTF document file
+                            format.</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="req3" required>
+                        <label for="req3">Where available, URLs for the references have been provided.</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="req4" required>
+                        <label for="req4">The text is single-spaced; uses a 12-point font; employs italics, rather than
+                            underlining (except with URL addresses); and all illustrations, figures, and tables are
+                            placed
+                            within the text at the appropriate points, rather than at the end.</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="req5" required>
+                        <label for="req5">The text adheres to the stylistic and bibliographic requirements outlined in
+                            the
+                            Author Guidelines.</label>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 40px;">
+                    <div class="section-icon">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <h2>Comments for the Editor</h2>
+                </div>
+
+                <div class="form-group">
+                    <div class="editor-wrapper">
+                        <div class="editor-toolbar">
+                            <button type="button" title="Paste"><i class="fas fa-paste"></i></button>
+                            <button type="button" title="Paste as Text"><i class="fas fa-file-alt"></i></button>
+                            <button type="button" title="Bold"><i class="fas fa-bold"></i></button>
+                            <button type="button" title="Italic"><i class="fas fa-italic"></i></button>
+                            <button type="button" title="Underline"><i class="fas fa-underline"></i></button>
+                            <button type="button" title="Ordered List"><i class="fas fa-list-ol"></i></button>
+                            <button type="button" title="Unordered List"><i class="fas fa-list-ul"></i></button>
+                            <button type="button" title="Subscript"><i class="fas fa-subscript"></i></button>
+                            <button type="button" title="Superscript"><i class="fas fa-superscript"></i></button>
+                            <button type="button" title="Insert Link"><i class="fas fa-link"></i></button>
+                            <button type="button" title="Insert Special Character"><i class="fas fa-omega"></i></button>
+                            <button type="button" title="Insert Code"><i class="fas fa-code"></i></button>
+                            <button type="button" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                            <button type="button" title="Insert Image"><i class="fas fa-image"></i></button>
+                            <button type="button" title="Download"><i class="fas fa-download"></i></button>
+                        </div>
+                        <textarea class="form-control editor-textarea" id="editorComments"
+                            placeholder="Enter your comments here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="checkbox-item" style="margin-top: 25px;">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Yes, I agree to have my data collected and stored according to the <a
+                            href="javascript:void(0)" class="privacy-link">privacy statement</a>.</label>
+                </div>
+
+                <div class="required-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>All fields are required: *</span>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="cancelSubmission()">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button class="btn btn-primary" onclick="nextStep(2)">
+                        Save and continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Upload Submission -->
+            <div class="content-card step-content" id="step2">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h2>Upload Files</h2>
+                </div>
+
+                <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Upload your files</h3>
+                    <p>Upload any files the editorial team will need to evaluate your submission.</p>
+                    <button class="btn btn-warning" type="button">
+                        <i class="fas fa-file-upload"></i> Browse Files
+                    </button>
+                    <input type="file" id="fileInput" class="hidden" multiple accept=".pdf,.doc,.docx,.rtf">
+                </div>
+
+                <div id="filesList" style="margin-top: 30px;">
+                    <!-- Uploaded files will appear here -->
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="prevStep(1)">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button class="btn btn-primary" onclick="nextStep(3)">
+                        Save and continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Enter Metadata -->
+            <div class="content-card step-content" id="step3">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h2>Article Metadata</h2>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prefix" class="form-label">Prefix</label>
+                        <input type="text" id="prefix" class="form-control" placeholder="e.g., A, The">
+                        <p class="form-hint">Examples: A, The</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="title" class="form-label required">Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="Enter article title" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subtitle" class="form-label">Subtitle</label>
+                    <input type="text" id="subtitle" class="form-control" placeholder="Enter subtitle (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="abstract" class="form-label required">Abstract</label>
+                    <div class="editor-wrapper">
+                        <div class="editor-toolbar">
+                            <button type="button" title="Paste"><i class="fas fa-paste"></i></button>
+                            <button type="button" title="Paste as Text"><i class="fas fa-file-alt"></i></button>
+                            <button type="button" title="Bold"><i class="fas fa-bold"></i></button>
+                            <button type="button" title="Italic"><i class="fas fa-italic"></i></button>
+                            <button type="button" title="Underline"><i class="fas fa-underline"></i></button>
+                            <button type="button" title="Ordered List"><i class="fas fa-list-ol"></i></button>
+                            <button type="button" title="Unordered List"><i class="fas fa-list-ul"></i></button>
+                            <button type="button" title="Subscript"><i class="fas fa-subscript"></i></button>
+                            <button type="button" title="Superscript"><i class="fas fa-superscript"></i></button>
+                            <button type="button" title="Insert Link"><i class="fas fa-link"></i></button>
+                            <button type="button" title="Insert Code"><i class="fas fa-code"></i></button>
+                            <button type="button" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                        </div>
+                        <textarea class="form-control editor-textarea" id="abstract"
+                            placeholder="Enter abstract (200-300 words)" required></textarea>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 40px;">
+                    <div class="section-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h2>List of Contributors</h2>
+                </div>
+
+                <button class="btn btn-outline" style="margin-bottom: 20px;" onclick="addContributor()">
+                    <i class="fas fa-user-plus"></i> Add Contributor
+                </button>
+
+                <table class="contributors-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;"></th>
+                            <th>Name</th>
+                            <th>E-mail</th>
+                            <th>Role</th>
+                            <th class="icon-cell">Primary Contact</th>
+                            <th class="icon-cell">In Browse Lists</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contributorsBody">
+                        <tr>
+                            <td><button class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;"><i
+                                        class="fas fa-chevron-right"></i></button></td>
+                            <td><strong>Contributor 1</strong></td>
+                            <td>test@1.com</td>
+                            <td><span
+                                    style="background: var(--light-bg); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 600;">Author</span>
+                            </td>
+                            <td class="icon-cell"><i class="fas fa-check-circle"></i></td>
+                            <td class="icon-cell"><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;"><i
+                                        class="fas fa-chevron-right"></i></button></td>
+                            <td><strong>Contributor 2</strong></td>
+                            <td>test@2.com</td>
+                            <td><span
+                                    style="background: var(--light-bg); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem; font-weight: 600;">Co-Author</span>
+                            </td>
+                            <td class="icon-cell"><i class="fas fa-check-circle"></i></td>
+                            <td class="icon-cell"><i class="fas fa-check-circle"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="section-header" style="margin-top: 40px;">
+                    <div class="section-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h2>Additional Refinements</h2>
+                </div>
+
+                <div class="form-group">
+                    <label for="keywords" class="form-label">Keywords</label>
+                    <input type="text" id="keywords" class="form-control"
+                        placeholder="Press 'Enter' after each keyword">
+                    <p class="form-hint">Add additional information for your submission. Press 'enter' after each term.
+                    </p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="prevStep(2)">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button class="btn btn-primary" onclick="nextStep(4)">
+                        Save and continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div class="content-card step-content" id="step4">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h2>Review & Confirm</h2>
+                </div>
+
+                <div class="alert alert-info">
+                    <div class="alert-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="alert-content">
+                        <strong>Ready to Submit!</strong><br>
+                        Your submission has been uploaded and is ready to be sent. You may go back to review and adjust
+                        any
+                        of the information you have entered before continuing. When you are ready, click "Finish
+                        Submission".
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="prevStep(3)">
+                        <i class="fas fa-arrow-left"></i> Back to Edit
+                    </button>
+                    <button class="btn btn-success" onclick="finishSubmission()">
+                        <i class="fas fa-paper-plane"></i> Finish Submission
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 5: Next Steps (Completion) -->
+            <div class="content-card step-content" id="step5">
+                <div class="completion-box">
+                    <div class="completion-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Submission Complete!</h2>
+                    <p>Thank you for your interest in publishing with <strong>Journal of Advances in Management,
+                            Engineering
+                            and Science (JAMES)</strong>.</p>
+
+                    <div class="next-steps-box">
+                        <h3>
+                            <i class="fas fa-lightbulb" style="color: var(--accent-yellow);"></i>
+                            What Happens Next?
+                        </h3>
+                        <p style="color: var(--text-medium); margin-bottom: 25px;">
+                            The journal has been notified of your submission, and you've been emailed a confirmation for
+                            your records. Once the editor has reviewed the submission, they will contact you.
+                        </p>
+
+                        <p style="font-weight: 600; color: var(--text-dark); margin-bottom: 15px;">For now, you can:</p>
+                        <ul class="next-steps-list">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Review this submission</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="loadPage('journalSubmission-components', 'journal-submission')">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>Create a new submission</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-home"></i>
+                                    <span>Return to your dashboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <template id="contributorModalTemplate">
+            <!-- paste your entire modal.html content here (inside the template) -->
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Add Contributor Modal</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                <style>
+                    :root {
+                        --primary-blue: #3d6db5;
+                        --secondary-blue: #2c4f7c;
+                        --dark-blue: #1e3a5f;
+                        --accent-yellow: #ffc107;
+                        --light-bg: #f4f6f9;
+                        --white: #ffffff;
+                        --text-dark: #2c3e50;
+                        --text-medium: #5a6c7d;
+                        --text-light: #8492a6;
+                        --border-color: #e1e8ed;
+                        --success-green: #4caf50;
+                        --danger-red: #f44336;
+                    }
+
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+
+                    body {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        background: var(--light-bg);
+                    }
+
+                    /* Modal Overlay */
+                    .modal-overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.6);
+                        backdrop-filter: blur(4px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 10000;
+                        padding: 20px;
+                        animation: fadeIn 0.3s ease;
+                    }
+
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                    }
+
+                    /* Modal Container */
+                    .modal-container {
+                        background: white;
+                        width: 100%;
+                        max-width: 700px;
+                        max-height: 95vh;
+                        overflow-y: auto;
+                        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                        animation: slideUp 0.4s ease;
+                        position: relative;
+                    }
+
+                    @keyframes slideUp {
+                        from {
+                            opacity: 0;
+                            transform: translateY(50px);
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+                    /* Modal Header */
+                    .modal-header {
+                        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: white;
+                        position: sticky;
+                        top: 0;
+                        z-index: 10;
+                    }
+
+                    .modal-header-content {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                    }
+
+                    .modal-icon {
+                        width: 45px;
+                        height: 45px;
+                        background: rgba(255, 255, 255, 0.2);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.5rem;
+                    }
+
+                    .modal-header h2 {
+                        font-size: 17px;
+                        font-weight: 700;
+                    }
+
+                    .btn-close {
+                        background: rgba(255, 255, 255, 0.2);
+                        border: none;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.2rem;
+                        transition: all 0.3s ease;
+                    }
+
+                    .btn-close:hover {
+                        background: rgba(255, 255, 255, 0.3);
+                        transform: rotate(90deg);
+                    }
+
+                    /* Modal Body */
+                    .modal-body {
+                        padding: 35px 30px;
+                    }
+
+                    /* Form Section */
+                    .form-section {
+                        margin-bottom: 35px;
+                    }
+
+                    .section-title {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: var(--text-dark);
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding-bottom: 12px;
+                        border-bottom: 2px solid var(--border-color);
+                    }
+
+                    .section-title i {
+                        color: var(--primary-blue);
+                        font-size: 1.2rem;
+                    }
+
+                    .section-description {
+                        color: var(--text-medium);
+                        font-size: 0.9rem;
+                        margin-bottom: 20px;
+                        line-height: 1.6;
+                        padding: 12px 15px;
+                        background: var(--light-bg);
+                        border-radius: 8px;
+                        border-left: 3px solid var(--primary-blue);
+                    }
+
+                    /* Form Groups */
+                    .form-group {
+                        margin-bottom: 25px;
+                    }
+
+                    .form-row {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 20px;
+                    }
+
+                    .form-label {
+                        display: block;
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                        color: var(--text-dark);
+                        font-size: 0.9rem;
+                    }
+
+                    .form-label.required::after {
+                        content: ' *';
+                        color: var(--danger-red);
+                        font-weight: 700;
+                    }
+
+                    .form-control {
+                        width: 100%;
+                        padding: 12px 15px;
+                        border: 2px solid var(--border-color);
+                        border-radius: 8px;
+                        font-size: 0.95rem;
+                        font-family: inherit;
+                        transition: all 0.3s ease;
+                        background: white;
+                    }
+
+                    .form-control:focus {
+                        outline: none;
+                        border-color: var(--primary-blue);
+                        box-shadow: 0 0 0 4px rgba(61, 109, 181, 0.1);
+                    }
+
+                    .form-control::placeholder {
+                        color: var(--text-light);
+                        font-style: italic;
+                    }
+
+                    select.form-control {
+                        cursor: pointer;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235a6c7d' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                        background-position: right 12px center;
+                        padding-right: 40px;
+                        appearance: none;
+                    }
+
+                    .form-hint {
+                        font-size: 0.85rem;
+                        color: var(--text-light);
+                        margin-top: 6px;
+                        display: block;
+                    }
+
+                    /* Editor Wrapper */
+                    .editor-wrapper {
+                        border: 2px solid var(--border-color);
+                        border-radius: 8px;
+                        overflow: hidden;
+                        background: white;
+                    }
+
+                    .editor-toolbar {
+                        display: flex;
+                        gap: 5px;
+                        padding: 10px;
+                        background: var(--light-bg);
+                        border-bottom: 2px solid var(--border-color);
+                        flex-wrap: wrap;
+                    }
+
+                    .editor-toolbar button {
+                        padding: 8px 10px;
+                        border: 1px solid var(--border-color);
+                        background: white;
+                        cursor: pointer;
+                        border-radius: 6px;
+                        transition: all 0.2s ease;
+                        font-size: 0.85rem;
+                        color: var(--text-medium);
+                    }
+
+                    .editor-toolbar button:hover {
+                        background: var(--primary-blue);
+                        color: white;
+                        border-color: var(--primary-blue);
+                    }
+
+                    .editor-textarea {
+                        min-height: 120px;
+                        border: none;
+                        padding: 15px;
+                        resize: vertical;
+                        font-size: 0.9rem;
+                        width: 100%;
+                        font-family: inherit;
+                    }
+
+                    .editor-textarea:focus {
+                        outline: none;
+                    }
+
+                    /* Radio Buttons */
+                    .radio-group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+                    .radio-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 12px 15px;
+                        background: var(--light-bg);
+                        border-radius: 8px;
+                        border: 2px solid transparent;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                    }
+
+                    .radio-item:hover {
+                        background: white;
+                        border-color: var(--primary-blue);
+                    }
+
+                    .radio-item input[type="radio"] {
+                        margin-right: 12px;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        accent-color: var(--primary-blue);
+                    }
+
+                    .radio-item label {
+                        cursor: pointer;
+                        font-size: 0.95rem;
+                        color: var(--text-dark);
+                        font-weight: 500;
+                    }
+
+                    /* Checkboxes */
+                    .checkbox-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 12px 15px;
+                        background: var(--light-bg);
+                        border-radius: 8px;
+                        margin-bottom: 12px;
+                        border: 2px solid transparent;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                    }
+
+                    .checkbox-item:hover {
+                        background: white;
+                        border-color: var(--primary-blue);
+                    }
+
+                    .checkbox-item input[type="checkbox"] {
+                        margin-right: 12px;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        accent-color: var(--primary-blue);
+                    }
+
+                    .checkbox-item label {
+                        cursor: pointer;
+                        font-size: 0.95rem;
+                        color: var(--text-dark);
+                        line-height: 1.5;
+                    }
+
+                    /* Required Note */
+                    .required-note {
+                        background: #fff9e6;
+                        padding: 12px 15px;
+                        border-left: 4px solid var(--accent-yellow);
+                        border-radius: 8px;
+                        font-size: 0.85rem;
+                        color: var(--text-medium);
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin-top: 25px;
+                    }
+
+                    .required-note i {
+                        color: #ff9800;
+                        font-size: 1rem;
+                    }
+
+                    /* Modal Footer */
+                    .modal-footer {
+                        padding: 20px 30px;
+                        background: var(--light-bg);
+                        border-radius: 0 0 16px 16px;
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 15px;
+                        position: sticky;
+                        bottom: 0;
+                        z-index: 10;
+                    }
+
+                    /* Buttons */
+                    .btn {
+                        padding: 12px 30px;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 0.95rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+
+                    .btn-primary {
+                        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+                        color: white;
+                        box-shadow: 0 4px 12px rgba(61, 109, 181, 0.3);
+                    }
+
+                    .btn-primary:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 6px 20px rgba(61, 109, 181, 0.4);
+                    }
+
+                    .btn-secondary {
+                        background: white;
+                        color: var(--text-dark);
+                        border: 2px solid var(--border-color);
+                    }
+
+                    .btn-secondary:hover {
+                        background: var(--light-bg);
+                        border-color: var(--text-medium);
+                    }
+
+                    /* Responsive */
+                    @media (max-width: 968px) {
+                        .modal-container {
+                            max-width: 95%;
+                        }
+
+                        .modal-body {
+                            padding: 25px 20px;
+                        }
+
+                        .form-row {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        .modal-overlay {
+                            padding: 10px;
+                        }
+
+                        .modal-container {
+                            max-width: 100%;
+                            max-height: 100vh;
+                            border-radius: 0;
+                        }
+
+                        .modal-header {
+                            border-radius: 0;
+                            padding: 15px;
+                        }
+
+                        .modal-icon {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 1.2rem;
+                        }
+
+                        .modal-header h2 {
+                            font-size: 16px;
+                        }
+
+                        .modal-body {
+                            padding: 20px 15px;
+                        }
+
+                        .section-title {
+                            font-size: 13px;
+                        }
+
+                        .section-description {
+                            font-size: 0.85rem;
+                            padding: 10px 12px;
+                        }
+
+                        .form-label {
+                            font-size: 0.85rem;
+                        }
+
+                        .form-control {
+                            padding: 10px 12px;
+                            font-size: 0.9rem;
+                        }
+
+                        .editor-toolbar button {
+                            padding: 6px 8px;
+                            font-size: 0.75rem;
+                        }
+
+                        .editor-textarea {
+                            min-height: 100px;
+                            padding: 12px;
+                            font-size: 0.85rem;
+                        }
+
+                        .modal-footer {
+                            flex-direction: column-reverse;
+                            border-radius: 0;
+                            padding: 15px;
+                        }
+
+                        .btn {
+                            width: 100%;
+                            justify-content: center;
+                            padding: 10px 20px;
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    /* Scrollbar */
+                    .modal-container::-webkit-scrollbar {
+                        width: 8px;
+                    }
+
+                    .modal-container::-webkit-scrollbar-track {
+                        background: var(--light-bg);
+                    }
+
+                    .modal-container::-webkit-scrollbar-thumb {
+                        background: var(--primary-blue);
+                        border-radius: 4px;
+                    }
+
+                    .modal-container::-webkit-scrollbar-thumb:hover {
+                        background: var(--secondary-blue);
+                    }
+                </style>
+            </head>
+
+            <body>
+                <!-- Modal Overlay -->
+                <div class="modal-overlay" id="contributorModal">
+                    <div class="modal-container">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <div class="modal-header-content">
+                                <div class="modal-icon">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <h2>Add Contributor</h2>
+                            </div>
+                            <button class="btn-close" onclick="closeModal()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <form id="contributorForm">
+                                <!-- Name Section -->
+                                <div class="form-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-user"></i>
+                                        <span>Name</span>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="givenName" class="form-label required">Given Name</label>
+                                            <input type="text" id="givenName" class="form-control"
+                                                placeholder="Given Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="familyName" class="form-label">Family Name</label>
+                                            <input type="text" id="familyName" class="form-control"
+                                                placeholder="Family Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="preferredName" class="form-label">Preferred Public Name</label>
+                                        <input type="text" id="preferredName" class="form-control"
+                                            placeholder="Preferred Public Name">
+                                        <span class="form-hint">How do you prefer to be addressed? Salutations, middle
+                                            names
+                                            and suffixes can be added here if you would like.</span>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Section -->
+                                <div class="form-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>Contact</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-label required">Email</label>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="contributor@example.com" required>
+                                    </div>
+                                </div>
+
+                                <!-- Country Section -->
+                                <div class="form-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Country</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="form-label required">Country</label>
+                                        <select id="country" class="form-control" required>
+                                            <option value="">Select Country</option>
+                                            <option value="US">United States</option>
+                                            <option value="GB">United Kingdom</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="IN">India</option>
+                                            <option value="DE">Germany</option>
+                                            <option value="FR">France</option>
+                                            <option value="JP">Japan</option>
+                                            <option value="CN">China</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="ZA">South Africa</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- User Details Section -->
+                                <div class="form-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-id-card"></i>
+                                        <span>User Details</span>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="homepage" class="form-label">Homepage URL</label>
+                                            <input type="url" id="homepage" class="form-control"
+                                                placeholder="https://example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="orcid" class="form-label">ORCID iD</label>
+                                            <input type="text" id="orcid" class="form-control"
+                                                placeholder="0000-0000-0000-0000">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="affiliation" class="form-label">Affiliation</label>
+                                        <input type="text" id="affiliation" class="form-control"
+                                            placeholder="University or Organization">
+                                    </div>
+                                </div>
+
+                                <!-- Bio Section -->
+                                <div class="form-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span>Biography</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="editor-wrapper">
+                                            <div class="editor-toolbar">
+                                                <button type="button" title="Paste"><i
+                                                        class="fas fa-paste"></i></button>
+                                                <button type="button" title="Paste as Text"><i
+                                                        class="fas fa-file-alt"></i></button>
+                                                <button type="button" title="Bold"><i class="fas fa-bold"></i></button>
+                                                <button type="button" title="Italic"><i
+                                                        class="fas fa-italic"></i></button>
+                                                <button type="button" title="Underline"><i
+                                                        class="fas fa-underline"></i></button>
+                                                <button type="button" title="Ordered List"><i
+                                                        class="fas fa-list-ol"></i></button>
+                                                <button type="button" title="Unordered List"><i
+                                                        class="fas fa-list-ul"></i></button>
+                                                <button type="button" title="Subscript"><i
+                                                        class="fas fa-subscript"></i></button>
+                                                <button type="button" title="Superscript"><i
+                                                        class="fas fa-superscript"></i></button>
+                                                <button type="button" title="Insert Link"><i
+                                                        class="fas fa-link"></i></button>
+                                                <button type="button" title="Remove Link"><i
+                                                        class="fas fa-unlink"></i></button>
+                                                <button type="button" title="Insert Code"><i
+                                                        class="fas fa-code"></i></button>
+                                                <button type="button" title="Insert Special Character"><i
+                                                        class="fas fa-omega"></i></button>
+                                                <button type="button" title="Insert Image"><i
+                                                        class="fas fa-image"></i></button>
+                                                <button type="button" title="Clear Formatting"><i
+                                                        class="fas fa-eraser"></i></button>
+                                            </div>
+                                            <textarea class="editor-textarea" id="biography"
+                                                placeholder="Bio Statement (e.g., department and rank)"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Contributor Role Section -->
+                                <div class="form-section">
+                                    <div class="section-title">
+                                        <i class="fas fa-user-tag"></i>
+                                        <span>Contributor's Role</span>
+                                    </div>
+                                    <div class="section-description">
+                                        Select the primary role of this contributor in this submission.
+                                    </div>
+                                    <div class="radio-group">
+                                        <div class="radio-item">
+                                            <input type="radio" id="roleAuthor" name="role" value="author" checked>
+                                            <label for="roleAuthor">Author</label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" id="roleTranslator" name="role" value="translator">
+                                            <label for="roleTranslator">Translator</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Options -->
+                                <div class="form-section">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="principalContact">
+                                        <label for="principalContact">Principal contact for editorial
+                                            correspondence</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="browseLists" checked>
+                                        <label for="browseLists">Include this contributor in browse lists?</label>
+                                    </div>
+                                </div>
+
+                                <!-- Required Note -->
+                                <div class="required-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>Required fields are marked with an asterisk: *</span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" onclick="closeModal()">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                            <button class="btn btn-primary" type="button" onclick="closeModal()">
+                                <i class="fas fa-save"></i> Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // Close modal function
+                    // function closeModal() {
+                    //     const modal = document.getElementById('contributorModal');
+                    //     modal.style.animation = 'fadeOut 0.3s ease';
+
+                    //     setTimeout(() => {
+                    //         // In real implementation, this would hide the modal
+                    //         // For demo purposes, we'll just reload or hide
+                    //         window.parent.postMessage('closeModal', '*');
+                    //     }, 300);
+                    // }
+
+                    // Close on overlay click
+                    document.querySelector('.modal-overlay').addEventListener('click', function (e) {
+                        if (e.target === this) {
+                            closeModal();
+                        }
+                    });
+
+                    // Close on Escape key
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape') {
+                            closeModal();
+                        }
+                    });
+
+                    // Save contributor function
+                    function saveContributor() {
+                        const form = document.getElementById('contributorForm');
+
+                        // Validate form
+                        if (!form.checkValidity()) {
+                            form.reportValidity();
+                            return;
+                        }
+
+                        // Get form data
+                        const contributorData = {
+                            givenName: document.getElementById('givenName').value,
+                            familyName: document.getElementById('familyName').value,
+                            preferredName: document.getElementById('preferredName').value,
+                            email: document.getElementById('email').value,
+                            country: document.getElementById('country').value,
+                            homepage: document.getElementById('homepage').value,
+                            orcid: document.getElementById('orcid').value,
+                            affiliation: document.getElementById('affiliation').value,
+                            biography: document.getElementById('biography').value,
+                            role: document.querySelector('input[name="role"]:checked').value,
+                            principalContact: document.getElementById('principalContact').checked,
+                            browseLists: document.getElementById('browseLists').checked
+                        };
+
+                        console.log('Contributor Data:', contributorData);
+
+                        // Show success message
+                        showSuccessMessage();
+
+                        // Close modal after short delay
+                        setTimeout(() => {
+                            closeModal();
+                        }, 1500);
+                    }
+
+                    function showSuccessMessage() {
+                        const successDiv = document.createElement('div');
+                        successDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #4caf50;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+                z-index: 10001;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                animation: slideInRight 0.3s ease;
+            `;
+                        successDiv.innerHTML = '<i class="fas fa-check-circle"></i> <span>Contributor added successfully!</span>';
+                        document.body.appendChild(successDiv);
+
+                        setTimeout(() => {
+                            successDiv.style.animation = 'slideOutRight 0.3s ease';
+                            setTimeout(() => successDiv.remove(), 300);
+                        }, 3000);
+                    }
+
+                    // Add animations
+                    const style = document.createElement('style');
+                    style.textContent = `
+            @keyframes fadeOut {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+            @keyframes slideInRight {
+                from {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOutRight {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+            }
+        `;
+                    document.head.appendChild(style);
+
+                    function openContributorModal() {
+                        const template = document.getElementById("contributorModalTemplate");
+                        const node = template.content.cloneNode(true);
+                        document.body.appendChild(node);
+                    }
+
+                    function closeModal() {
+                        const modal = document.getElementById("contributorModalTemplate");
+                        if (modal) modal.remove();
+                    }
+                </script>
+            </body>
+
+            </html>
+        </template>
+
+    </section>
+
+    <script src="journalSubmission-components.js"></script>
+</body>
+
+</html>

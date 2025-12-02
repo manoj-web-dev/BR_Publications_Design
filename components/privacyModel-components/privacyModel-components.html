@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+     <style>
+                :root {
+                    --primary-blue: #3d6db5;
+                    --secondary-blue: #2c4f7c;
+                    --dark-blue: #1e3a5f;
+                    --accent-yellow: #ffc107;
+                    --light-bg: #f4f6f9;
+                    --white: #ffffff;
+                    --text-dark: #2c3e50;
+                    --text-medium: #5a6c7d;
+                    --text-light: #8492a6;
+                    --border-color: #e1e8ed;
+                    --success-green: #4caf50;
+                    --danger-red: #f44336;
+                }
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background: var(--light-bg);
+                }
+
+                /* Modal Overlay */
+                .modal-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    backdrop-filter: blur(4px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10000;
+                    padding: 20px;
+                    animation: fadeIn 0.3s ease;
+                }
+
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                /* Modal Container */
+                .modal-container {
+                    background: white;
+                    width: 100%;
+                    max-width: 700px;
+                    max-height: 95vh;
+                    overflow-y: auto;
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                    animation: slideUp 0.4s ease;
+                    position: relative;
+                }
+
+                @keyframes slideUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(50px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                /* Modal Header */
+                .modal-header {
+                    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: white;
+                    position: sticky;
+                    top: 0;
+                    z-index: 10;
+                }
+
+                .modal-header-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                .modal-icon {
+                    width: 45px;
+                    height: 45px;
+                    background: rgba(255, 255, 255, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                }
+
+                .modal-header h2 {
+                    font-size: 17px;
+                    font-weight: 700;
+                }
+
+                .btn-close {
+                    background: rgba(255, 255, 255, 0.2);
+                    border: none;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 1.2rem;
+                    transition: all 0.3s ease;
+                }
+
+                .btn-close:hover {
+                    background: rgba(255, 255, 255, 0.3);
+                    transform: rotate(90deg);
+                }
+
+                p {
+                    padding: 10px;
+                }
+            </style>
+</head>
+
+<body>
+    <div class="modal-overlay" id="privacyModal">
+        <div class="modal-container">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <div class="modal-header-content">
+                    <div class="modal-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2>Privacy Statement</h2>
+                </div>
+                <button class="btn-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="progress-section">
+                <p>The names and email addresses entered in this journal site will be used exclusively for the stated purposes of this journal and will not be made available for any other purpose or to any other party.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
